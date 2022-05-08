@@ -1,0 +1,23 @@
+Questions: ei array theke chuto string ta ber kore tar index soho dekan?
+
+const fruits = ["Jack-fruite", "Mangos", "Apple", "Banana", "Orange"];
+
+
+
+function ShortWord(fruits){
+    let shortString;
+
+    for(let i = 0; i < fruits.length; i++){
+        if(i == 0){
+            shortString = i;
+        } else {
+            if(fruits[i].length < fruits[shortString].length) {
+            shortString = i;
+            }
+        }
+    }
+    return [`ShortString is: ${fruits[shortString]} \ index is: ${shortString}`]
+}
+
+
+console.log(ShortWord(fruits));
